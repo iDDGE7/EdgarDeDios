@@ -1,0 +1,176 @@
+#header-background {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  height: 60px;
+  background: #262525;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+}
+
+.container-menu-mobile {
+  position: fixed;
+  top: 25%;
+  left: -100%;
+  width: 100%;
+  height: 70%;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-menu-mobile .center-menu-mobile {
+  padding: 80px 15px 100px 20px;
+  width: 90%;
+  background-color: rgba(36, 35, 35, 0.836);
+  transition: all 0.3s;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-menu-mobile .center-menu-mobile .item-list-nav-mobile {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-menu-mobile .center-menu-mobile .item-list-nav-mobile .item-nav-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.container-menu-mobile .center-menu-mobile .item-list-nav-mobile .item-nav-mobile .icon-menu {
+  width: 40px;
+}
+.container-menu-mobile .center-menu-mobile .item-list-nav-mobile .item-nav-mobile .name-item-nav {
+  position: absolute;
+  color: white;
+  top: 100%;
+  transform: translateY(100%);
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 8px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  position: fixed;
+  top: 12%;
+  width: 100%;
+  height: 50px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .center-content-header {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .center-content-header .conteiner-logo-main {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  color: #ffffff;
+  user-select: none;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header .center-content-header .nav-container {
+  width: 238px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header .center-content-header .nav-container .item-list-nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .center-content-header .nav-container .item-list-nav .item-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  user-select: none;
+}
+.header .center-content-header .nav-container .item-list-nav .item-nav:hover .name-item-nav {
+  visibility: visible;
+  transform: translateY(50%);
+  transition: all 0.2s;
+  background-color: #3f3e3e;
+}
+.header .center-content-header .nav-container .item-list-nav .item-nav .icon-menu {
+  transform: scale(1);
+  transition: all 0.2s;
+  width: 28px;
+}
+.header .center-content-header .nav-container .item-list-nav .item-nav .icon-menu:hover {
+  transform: scale(1.3);
+  transition: all 0.3s;
+}
+.header .center-content-header .nav-container .item-list-nav .item-nav .name-item-nav {
+  position: absolute;
+  visibility: hidden;
+  color: white;
+  top: 100%;
+  transition: all 0.1s;
+  padding: 9px 6px 9px 6px;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header .center-content-header .conteiner-button-menu {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .header .center-content-header {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 580px) {
+  .header .center-content-header .nav-container {
+    display: none;
+  }
+  .header .center-content-header .conteiner-button-menu {
+    display: initial;
+  }
+  .header .center-content-header .conteiner-button-menu .icon-menu {
+    width: 28px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../../media/images/cover.jpg) no-repeat bottom fixed;
+  background-size: cover;
+  z-index: -1;
+}
