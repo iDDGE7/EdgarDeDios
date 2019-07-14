@@ -3,10 +3,10 @@
   top: -100%;
   width: 100%;
   height: 60px;
-  background: #262525;
+  background: #2b2b2b;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: all 0.3s;
-}
+  z-index: 100; }
 
 .container-menu-mobile {
   position: fixed;
@@ -18,48 +18,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.container-menu-mobile .center-menu-mobile {
-  padding: 80px 15px 100px 20px;
-  width: 90%;
-  background-color: rgba(36, 35, 35, 0.836);
-  transition: all 0.3s;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container-menu-mobile .center-menu-mobile .item-list-nav-mobile {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.container-menu-mobile .center-menu-mobile .item-list-nav-mobile .item-nav-mobile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-.container-menu-mobile .center-menu-mobile .item-list-nav-mobile .item-nav-mobile .icon-menu {
-  width: 40px;
-}
-.container-menu-mobile .center-menu-mobile .item-list-nav-mobile .item-nav-mobile .name-item-nav {
-  position: absolute;
-  color: white;
-  top: 100%;
-  transform: translateY(100%);
-  border-radius: 4px;
-  font-family: "Poppins", sans-serif;
-  font-size: 8px;
-  text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+  z-index: 200; }
+  .container-menu-mobile .center-menu-mobile {
+    padding: 80px 15px 100px 20px;
+    width: 90%;
+    background-color: rgba(36, 35, 35, 0.836);
+    transition: all 0.3s;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .container-menu-mobile .center-menu-mobile .item-list-nav-mobile {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .container-menu-mobile .center-menu-mobile .item-list-nav-mobile .item-nav-mobile {
+        width: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none; }
+        .container-menu-mobile .center-menu-mobile .item-list-nav-mobile .item-nav-mobile .icon-menu {
+          width: 30px; }
+        .container-menu-mobile .center-menu-mobile .item-list-nav-mobile .item-nav-mobile .name-item-nav {
+          position: absolute;
+          color: white;
+          top: 100%;
+          transform: translateY(100%);
+          border-radius: 4px;
+          font-family: "Poppins", sans-serif;
+          font-size: 8px;
+          text-align: center;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
 .header {
+  z-index: 200;
   position: fixed;
   top: 12%;
   width: 100%;
@@ -67,102 +64,78 @@
   transition: all 0.3s;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.header .center-content-header {
-  width: 75%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header .center-content-header .conteiner-logo-main {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 35px;
-  color: #ffffff;
-  user-select: none;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.header .center-content-header .nav-container {
-  width: 238px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.header .center-content-header .nav-container .item-list-nav {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header .center-content-header .nav-container .item-list-nav .item-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  user-select: none;
-}
-.header .center-content-header .nav-container .item-list-nav .item-nav:hover .name-item-nav {
-  visibility: visible;
-  transform: translateY(50%);
-  transition: all 0.2s;
-  background-color: #3f3e3e;
-}
-.header .center-content-header .nav-container .item-list-nav .item-nav .icon-menu {
-  transform: scale(1);
-  transition: all 0.2s;
-  width: 28px;
-}
-.header .center-content-header .nav-container .item-list-nav .item-nav .icon-menu:hover {
-  transform: scale(1.3);
-  transition: all 0.3s;
-}
-.header .center-content-header .nav-container .item-list-nav .item-nav .name-item-nav {
-  position: absolute;
-  visibility: hidden;
-  color: white;
-  top: 100%;
-  transition: all 0.1s;
-  padding: 9px 6px 9px 6px;
-  border-radius: 4px;
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.header .center-content-header .conteiner-button-menu {
-  display: none;
-}
-@media screen and (max-width: 1024px) {
+  justify-content: center; }
   .header .center-content-header {
-    width: 80%;
+    width: 75%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-  }
-}
-@media screen and (max-width: 580px) {
-  .header .center-content-header .nav-container {
-    display: none;
-  }
-  .header .center-content-header .conteiner-button-menu {
-    display: initial;
-  }
-  .header .center-content-header .conteiner-button-menu .icon-menu {
-    width: 28px;
-  }
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+    justify-content: space-between; }
+    .header .center-content-header .conteiner-logo-main {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 35px;
+      color: #ffffff;
+      user-select: none;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    .header .center-content-header .nav-container {
+      width: 238px;
+      height: 100%;
+      display: flex;
+      align-items: center; }
+      .header .center-content-header .nav-container .item-list-nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .header .center-content-header .nav-container .item-list-nav .item-nav {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          list-style: none;
+          user-select: none; }
+          .header .center-content-header .nav-container .item-list-nav .item-nav:hover .name-item-nav {
+            visibility: visible;
+            transform: translateY(50%);
+            transition: all 0.2s; }
+          .header .center-content-header .nav-container .item-list-nav .item-nav .icon-menu {
+            transform: scale(1);
+            transition: all 0.2s;
+            width: 25px; }
+            .header .center-content-header .nav-container .item-list-nav .item-nav .icon-menu:hover {
+              transform: scale(1.3);
+              transition: all 0.3s; }
+          .header .center-content-header .nav-container .item-list-nav .item-nav .name-item-nav {
+            position: absolute;
+            visibility: hidden;
+            color: white;
+            top: 100%;
+            transition: all 0.1s;
+            padding: 10px 6px 10px 6px;
+            border-radius: 2px;
+            font-family: "Poppins", sans-serif;
+            font-size: 12px;
+            text-align: center;
+            background-color: rgba(36, 30, 30, 0.397); }
+    .header .center-content-header .conteiner-button-menu {
+      display: none; }
+  @media screen and (max-width: 1024px) {
+    .header .center-content-header {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; } }
+  @media screen and (max-width: 580px) {
+    .header .center-content-header .nav-container {
+      display: none; }
+    .header .center-content-header .conteiner-button-menu {
+      display: initial; }
+      .header .center-content-header .conteiner-button-menu .icon-menu {
+        width: 28px; } }
 
 .cover {
   position: absolute;
@@ -172,5 +145,344 @@
   left: 0;
   background: url(../../media/images/cover.jpg) no-repeat bottom fixed;
   background-size: cover;
-  z-index: -1;
-}
+  z-index: -1; }
+
+.container-all .container-background-all {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  @media screen and (max-width: 750px) {
+    .container-all .container-background-all {
+      flex-direction: column-reverse; } }
+  .container-all .container-background-all .container-background-graphs {
+    width: 50%;
+    height: 100%;
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column; }
+    @media (max-width: 750px) {
+      .container-all .container-background-all .container-background-graphs {
+        width: 100%; } }
+    .container-all .container-background-all .container-background-graphs .container-graph {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container-all .container-background-all .container-background-graphs .container-graph .content-graph {
+        position: relative;
+        width: 80%;
+        max-width: 492px;
+        min-width: 300px; }
+        .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-title-graph {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-title-graph .elipse-title-graph {
+            margin-right: 20px;
+            height: 28px; }
+          .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-title-graph .title-graph {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            text-transform: uppercase;
+            color: white; }
+          @media (max-width: 320px) {
+            .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-title-graph .elipse-title-graph {
+              height: 24px;
+              margin-right: 15px; }
+            .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-title-graph .title-graph {
+              font-size: 24px; } }
+        .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-levels-graph {
+          position: absolute;
+          top: 60px;
+          width: 100%;
+          height: 27px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+          .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-levels-graph .levels-graph {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 10px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+          .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-levels-graph .level1-programing {
+            color: #2d99e6; }
+          .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-levels-graph .level2-programing {
+            color: #2ba9c2; }
+          .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-levels-graph .level3-programing {
+            color: #2bafb4; }
+          .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-levels-graph .level4-programing {
+            color: #04e75f; }
+        .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph {
+          position: absolute;
+          top: 100px;
+          width: 80%;
+          transform: translateX(15%); }
+          .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-opaque-bars {
+            z-index: 25;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 10px 0 10px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; }
+            .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-opaque-bars .opaque-bar {
+              width: 100%;
+              height: 8px;
+              background: rgba(255, 255, 255, 0.15);
+              border-radius: 0px 4px 4px 0px; }
+          .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars {
+            z-index: 50;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; }
+            .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .shape-form-graphic-vertical {
+              position: absolute;
+              transform: translateX(-50%);
+              top: 0; }
+            .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar {
+              position: relative;
+              height: 26px;
+              background: linear-gradient(90deg, #e75e5e 0%, #ffd600 168.97%);
+              transition: all 1s;
+              display: flex;
+              align-items: center; }
+              .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar .skill {
+                position: relative;
+                left: 20px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                color: #ffffff;
+                z-index: 50; }
+              .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar .elipse-level {
+                position: absolute;
+                right: 0;
+                transform: translateX(50%); }
+            .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar1-web-dev {
+              width: 20%; }
+            .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar2-web-dev {
+              width: 40%; }
+            .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar3-web-dev {
+              width: 60%; }
+            .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar4-web-dev {
+              width: 70%; }
+            .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar5-web-dev {
+              width: 90%; }
+        .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-phrase-graph {
+          position: absolute;
+          bottom: 20px;
+          width: 80%;
+          transform: translateX(13%);
+          height: 60px;
+          padding: 0 5px 0 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-phrase-graph .phrase-graph {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 2rem;
+            line-height: 16px;
+            text-align: center;
+            color: #ffffff; }
+    .container-all .container-background-all .container-background-graphs .container-graph1 {
+      padding: 80px 0 80px 0; }
+      .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph {
+        height: 532px; }
+        .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-levels-graph .level1-web-dev {
+          color: #e96955; }
+        .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-levels-graph .level2-web-dev {
+          color: #ef893c; }
+        .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-levels-graph .level3-web-dev {
+          color: #f6ac21; }
+        .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-levels-graph .level4-web-dev {
+          color: #fcca09; }
+        .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph {
+          height: 334px; }
+          .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .shape-form-graphic-vertical {
+            position: absolute;
+            transform: translateX(-50%);
+            top: 0; }
+          .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar {
+            background: linear-gradient(90deg, #e75e5e 0%, #ffd600 168.97%); }
+            .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar .skill {
+              color: #ffffff; }
+          .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar1-web-dev {
+            width: 20%; }
+          .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar2-web-dev {
+            width: 40%; }
+          .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar3-web-dev {
+            width: 60%; }
+          .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar4-web-dev {
+            width: 70%; }
+          .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar5-web-dev {
+            width: 90%; }
+    .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph {
+      height: 374px; }
+      .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-levels-graph .level1-programing {
+        color: #2d99e6; }
+      .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-levels-graph .level2-programing {
+        color: #2ba9c2; }
+      .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-levels-graph .level3-programing {
+        color: #2bafb4; }
+      .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-levels-graph .level4-programing {
+        color: #04e75f; }
+      .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-title-graph .elipse-title-graph {
+        margin-right: 20px;
+        height: 25px; }
+      .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph {
+        height: 180px; }
+        .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph .container-color-bars .shape-form-graphic-vertical {
+          position: absolute;
+          transform: translateX(-50%);
+          top: 0; }
+        .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph .container-color-bars .bar {
+          background: linear-gradient(90deg, #2d94f2 0%, #24ff00 356.4%); }
+          .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph .container-color-bars .bar .skill {
+            color: #ffffff; }
+        .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph .container-color-bars .bar1-programing {
+          width: 20%; }
+        .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph .container-color-bars .bar2-programing {
+          width: 40%; }
+        .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph .container-color-bars .bar3-programing {
+          width: 60%; }
+    .container-all .container-background-all .container-background-graphs .container-graph3 {
+      padding: 80px 0 80px 0; }
+      .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph {
+        height: 303px; }
+        .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-levels-graph .level1-db {
+          color: #d6e858; }
+        .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-levels-graph .level2-db {
+          color: #c2e762; }
+        .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-levels-graph .level3-db {
+          color: #b7e667; }
+        .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-levels-graph .level4-db {
+          color: #99e476; }
+        .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-title-graph .elipse-title-graph {
+          margin-right: 20px;
+          height: 25px; }
+        .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-bars-graph {
+          height: 103px; }
+          .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-bars-graph .container-color-bars .shape-form-graphic-vertical {
+            position: absolute;
+            transform: translateX(-50%);
+            top: 0; }
+          .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-bars-graph .container-color-bars .bar {
+            background: linear-gradient(90deg, #dde955 0%, #dde955 0.03%, #99e476 257.94%); }
+            .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-bars-graph .container-color-bars .bar .skill {
+              color: #222020; }
+          .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-bars-graph .container-color-bars .bar1-db {
+            width: 20%; }
+          .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-bars-graph .container-color-bars .bar2-db {
+            width: 40%; }
+    .container-all .container-background-all .container-background-graphs .container-graph4 {
+      padding: 0px 0 80px 0; }
+      .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph {
+        height: 447px; }
+        .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-levels-graph .level1-designer {
+          color: #5e25d9; }
+        .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-levels-graph .level2-designer {
+          color: #8429b2; }
+        .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-levels-graph .level3-designer {
+          color: #a72d8e; }
+        .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-levels-graph .level4-designer {
+          color: #f608fb; }
+        .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-title-graph .elipse-title-graph {
+          margin-right: 20px;
+          height: 25px; }
+        .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph {
+          height: 257px; }
+          .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .shape-form-graphic-vertical {
+            position: absolute;
+            transform: translateX(-50%);
+            top: 0; }
+          .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar {
+            background: linear-gradient(90deg, #5524e2 5.31%, #e9354b 165.6%); }
+            .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar .skill {
+              color: #ffffff; }
+          .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar1-db {
+            width: 20%; }
+          .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar2-db {
+            width: 40%; }
+  .container-all .container-background-all .container-background-space-blank {
+    width: 50%;
+    height: 100%; }
+    @media (max-width: 750px) {
+      .container-all .container-background-all .container-background-space-blank {
+        width: 100%;
+        height: 300px; } }
+  .container-all .container-background-all .container-background-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #ff6b00 0%, #4d5dee 100%);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s; }
+    .container-all .container-background-all .container-background-title .content-title {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .container-all .container-background-all .container-background-title .content-title .background {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 72px;
+        text-align: center;
+        color: #fcfcfc; }
+      .container-all .container-background-all .container-background-title .content-title .description-background {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: capitalize;
+        text-align: center;
+        color: #ffffff; }
+      @media (max-width: 750px) {
+        .container-all .container-background-all .container-background-title .content-title {
+          width: 100%;
+          height: 750px; }
+        .container-all .container-background-all .container-background-title .content-title .background {
+          font-size: 40px; }
+        .container-all .container-background-all .container-background-title .content-title .description-background {
+          font-size: 10px; } }
+    @media (max-width: 750px) {
+      .container-all .container-background-all .container-background-title {
+        position: absolute;
+        width: 100%;
+        height: 300px; } }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.container-all {
+  position: absolute;
+  top: 100%;
+  width: 100%; }

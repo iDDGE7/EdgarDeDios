@@ -12,7 +12,7 @@ buttonMenu.addEventListener('click', function () {
     }
 });
 
-window.onresize = function () {
+function menuMobileHide() {
     if (screen.width > 580) {
         statusMenu = 0;
         menuMobile.style.left = "-100%";
