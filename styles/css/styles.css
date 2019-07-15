@@ -6,7 +6,7 @@
   background: #2b2b2b;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: all 0.3s;
-  z-index: 100; }
+  z-index: 900; }
 
 .container-menu-mobile {
   position: fixed;
@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 200; }
+  z-index: 1000; }
   .container-menu-mobile .center-menu-mobile {
     padding: 80px 15px 100px 20px;
     width: 90%;
@@ -56,7 +56,7 @@
           text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
 .header {
-  z-index: 200;
+  z-index: 1000;
   position: fixed;
   top: 12%;
   width: 100%;
@@ -150,6 +150,8 @@
 .container-all .container-background-all {
   position: relative;
   width: 100%;
+  background-color: #1d1d1d;
+  overflow: hidden;
   display: flex;
   justify-content: space-between; }
   @media screen and (max-width: 750px) {
@@ -158,7 +160,7 @@
   .container-all .container-background-all .container-background-graphs {
     width: 50%;
     height: 100%;
-    background-color: #2e2e2e;
+    background-color: #292929;
     display: flex;
     flex-direction: column; }
     @media (max-width: 750px) {
@@ -171,14 +173,12 @@
       align-items: center; }
       .container-all .container-background-all .container-background-graphs .container-graph .content-graph {
         position: relative;
-        width: 80%;
-        max-width: 492px;
-        min-width: 300px; }
+        width: 60%;
+        min-width: 290px; }
         .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-title-graph {
           position: absolute;
           top: 0;
           width: 100%;
-          height: 50px;
           display: flex;
           justify-content: center;
           align-items: center; }
@@ -189,10 +189,10 @@
             font-family: Poppins;
             font-style: normal;
             font-weight: normal;
-            font-size: 28px;
+            font-size: 26px;
             text-transform: uppercase;
             color: white; }
-          @media (max-width: 320px) {
+          @media (max-width: 900px) {
             .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-title-graph .elipse-title-graph {
               height: 24px;
               margin-right: 15px; }
@@ -200,7 +200,7 @@
               font-size: 24px; } }
         .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-levels-graph {
           position: absolute;
-          top: 60px;
+          top: 80px;
           width: 100%;
           height: 27px;
           display: flex;
@@ -222,12 +222,13 @@
             color: #04e75f; }
         .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph {
           position: absolute;
-          top: 100px;
-          width: 80%;
-          transform: translateX(15%); }
+          top: 125px;
+          width: 100%;
+          left: 0%; }
           .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-opaque-bars {
             z-index: 25;
             position: absolute;
+            left: 0%;
             width: 100%;
             height: 100%;
             padding: 10px 0 10px 0;
@@ -243,7 +244,7 @@
             z-index: 50;
             position: absolute;
             top: 0;
-            left: 0;
+            left: 0%;
             width: 100%;
             height: 100%;
             display: flex;
@@ -251,44 +252,34 @@
             justify-content: space-between; }
             .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .shape-form-graphic-vertical {
               position: absolute;
-              transform: translateX(-50%);
-              top: 0; }
+              left: 0;
+              top: 0;
+              z-index: 49; }
             .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar {
               position: relative;
               height: 26px;
+              left: 20px;
               background: linear-gradient(90deg, #e75e5e 0%, #ffd600 168.97%);
               transition: all 1s;
               display: flex;
               align-items: center; }
               .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar .skill {
                 position: relative;
-                left: 20px;
+                left: 15px;
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 11px;
+                font-size: 10px;
                 color: #ffffff;
                 z-index: 50; }
               .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar .elipse-level {
                 position: absolute;
                 right: 0;
                 transform: translateX(50%); }
-            .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar1-web-dev {
-              width: 20%; }
-            .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar2-web-dev {
-              width: 40%; }
-            .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar3-web-dev {
-              width: 60%; }
-            .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar4-web-dev {
-              width: 70%; }
-            .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-bars-graph .container-color-bars .bar5-web-dev {
-              width: 90%; }
         .container-all .container-background-all .container-background-graphs .container-graph .content-graph .content-phrase-graph {
           position: absolute;
-          bottom: 20px;
-          width: 80%;
-          transform: translateX(13%);
-          height: 60px;
+          bottom: 10px;
+          width: 100%;
           padding: 0 5px 0 5px;
           display: flex;
           flex-direction: column;
@@ -316,24 +307,31 @@
           color: #fcca09; }
         .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph {
           height: 334px; }
-          .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .shape-form-graphic-vertical {
-            position: absolute;
-            transform: translateX(-50%);
-            top: 0; }
           .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar {
             background: linear-gradient(90deg, #e75e5e 0%, #ffd600 168.97%); }
             .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar .skill {
               color: #ffffff; }
           .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar1-web-dev {
-            width: 20%; }
+            width: 12%; }
           .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar2-web-dev {
-            width: 40%; }
+            width: 12%; }
           .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar3-web-dev {
-            width: 60%; }
+            width: 12%; }
           .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar4-web-dev {
-            width: 70%; }
+            width: 12%; }
           .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar5-web-dev {
-            width: 90%; }
+            width: 12%; }
+          @media (max-width: 750px) {
+            .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar1-web-dev {
+              width: 15%; }
+            .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar2-web-dev {
+              width: 15%; }
+            .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar3-web-dev {
+              width: 15%; }
+            .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar4-web-dev {
+              width: 15%; }
+            .container-all .container-background-all .container-background-graphs .container-graph1 .content-graph .content-bars-graph .container-color-bars .bar5-web-dev {
+              width: 15%; } }
     .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph {
       height: 374px; }
       .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-levels-graph .level1-programing {
@@ -349,20 +347,23 @@
         height: 25px; }
       .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph {
         height: 180px; }
-        .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph .container-color-bars .shape-form-graphic-vertical {
-          position: absolute;
-          transform: translateX(-50%);
-          top: 0; }
         .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph .container-color-bars .bar {
           background: linear-gradient(90deg, #2d94f2 0%, #24ff00 356.4%); }
           .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph .container-color-bars .bar .skill {
             color: #ffffff; }
         .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph .container-color-bars .bar1-programing {
-          width: 20%; }
+          width: 12%; }
         .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph .container-color-bars .bar2-programing {
-          width: 40%; }
+          width: 12%; }
         .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph .container-color-bars .bar3-programing {
-          width: 60%; }
+          width: 12%; }
+        @media (max-width: 750px) {
+          .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph .container-color-bars .bar1-programing {
+            width: 15%; }
+          .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph .container-color-bars .bar2-programing {
+            width: 15%; }
+          .container-all .container-background-all .container-background-graphs .container-graph2 .content-graph .content-bars-graph .container-color-bars .bar3-programing {
+            width: 15%; } }
     .container-all .container-background-all .container-background-graphs .container-graph3 {
       padding: 80px 0 80px 0; }
       .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph {
@@ -380,18 +381,19 @@
           height: 25px; }
         .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-bars-graph {
           height: 103px; }
-          .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-bars-graph .container-color-bars .shape-form-graphic-vertical {
-            position: absolute;
-            transform: translateX(-50%);
-            top: 0; }
           .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-bars-graph .container-color-bars .bar {
             background: linear-gradient(90deg, #dde955 0%, #dde955 0.03%, #99e476 257.94%); }
             .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-bars-graph .container-color-bars .bar .skill {
               color: #222020; }
           .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-bars-graph .container-color-bars .bar1-db {
-            width: 20%; }
+            width: 12%; }
           .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-bars-graph .container-color-bars .bar2-db {
-            width: 40%; }
+            width: 12%; }
+          @media (max-width: 750px) {
+            .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-bars-graph .container-color-bars .bar1-db {
+              width: 15%; }
+            .container-all .container-background-all .container-background-graphs .container-graph3 .content-graph .content-bars-graph .container-color-bars .bar2-db {
+              width: 15%; } }
     .container-all .container-background-all .container-background-graphs .container-graph4 {
       padding: 0px 0 80px 0; }
       .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph {
@@ -409,26 +411,29 @@
           height: 25px; }
         .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph {
           height: 257px; }
-          .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .shape-form-graphic-vertical {
-            position: absolute;
-            transform: translateX(-50%);
-            top: 0; }
           .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar {
             background: linear-gradient(90deg, #5524e2 5.31%, #e9354b 165.6%); }
             .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar .skill {
               color: #ffffff; }
-          .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar1-db {
-            width: 20%; }
-          .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar2-db {
-            width: 40%; }
-  .container-all .container-background-all .container-background-space-blank {
-    width: 50%;
-    height: 100%; }
-    @media (max-width: 750px) {
-      .container-all .container-background-all .container-background-space-blank {
-        width: 100%;
-        height: 300px; } }
+          .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar1-designer {
+            width: 12%; }
+          .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar2-designer {
+            width: 12%; }
+          .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar3-designer {
+            width: 12%; }
+          .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar4-designer {
+            width: 12%; }
+          @media (max-width: 750px) {
+            .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar1-designer {
+              width: 15%; }
+            .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar2-designer {
+              width: 15%; }
+            .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar3-designer {
+              width: 15%; }
+            .container-all .container-background-all .container-background-graphs .container-graph4 .content-graph .content-bars-graph .container-color-bars .bar4-designer {
+              width: 15%; } }
   .container-all .container-background-all .container-background-title {
+    z-index: 500;
     position: absolute;
     top: 0;
     right: 0;
@@ -439,9 +444,9 @@
     flex-direction: column;
     transition: all 0.3s; }
     .container-all .container-background-all .container-background-title .content-title {
-      position: relative;
+      position: absolute;
       width: 100%;
-      height: 100vh;
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -466,7 +471,7 @@
       @media (max-width: 750px) {
         .container-all .container-background-all .container-background-title .content-title {
           width: 100%;
-          height: 750px; }
+          height: 100%; }
         .container-all .container-background-all .container-background-title .content-title .background {
           font-size: 40px; }
         .container-all .container-background-all .container-background-title .content-title .description-background {
@@ -475,7 +480,7 @@
       .container-all .container-background-all .container-background-title {
         position: absolute;
         width: 100%;
-        height: 300px; } }
+        height: 100%; } }
 
 * {
   padding: 0;

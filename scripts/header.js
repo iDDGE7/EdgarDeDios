@@ -2,7 +2,7 @@ var header = document.getElementById('header');
 var headerBackground = document.getElementById('header-background');
 var menuMobile = document.getElementById('menu-mobile');
 
-function headerScroll() {
+var headerScroll = function headerScroll() {
     if (posScroll > 150) {
         header.style.top = "5px";
         headerBackground.style.top = "0%";
