@@ -214,5 +214,8 @@
   align-items: center;
   text-align: center;
   text-transform: capitalize;
-  color: white;
+
+  background: -webkit-linear-gradient(#1fc5dc, #cccccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
