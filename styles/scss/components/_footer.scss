@@ -1,0 +1,106 @@
+.container-footer-all {
+  // transform: translateY(100%);
+  opacity: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 50px 0 50px 0;
+  // background-color: rgb(41, 41, 41);
+  background: url(../../../media/images/footer3.jpg) center fixed no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: all 1s;
+
+  .content-contact {
+    // background-color: rgb(62, 79, 175);
+    position: relative;
+    width: 80%;
+    max-width: 312px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 150px;
+
+    .cornerUp-contact {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .title-contact {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: #ffffff;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 23px;
+    }
+
+    .container-social-networks {
+      //   background-color: rgb(143, 18, 18);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 23px;
+    }
+
+    .container-email {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: -0.02em;
+
+      color: #ffffff;
+
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .cornerDown-contact {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .content-phrase-end {
+    width: 80%;
+    max-width: 489px;
+
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #ffffff;
+
+    margin-top: 152px;
+  }
+
+  .content-copyright {
+    width: 90%;
+    max-width: 167px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #ffffff;
+    margin-top: 55px;
+  }
+}

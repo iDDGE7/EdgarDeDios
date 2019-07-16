@@ -4,11 +4,18 @@
 @import "components/mixin";
 @import "components/projects";
 @import "components/aboutMe";
+@import "components/footer";
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  user-select: none;
+  
+}
+
+html{
+    // background-color: rgb(31, 29, 29);
 }
 
 .container-all{

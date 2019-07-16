@@ -42,6 +42,7 @@ var scrollWindow = window.onscroll = function () {
     hiddenTitleBackgroundMobile();
 
     barsSize();
+    scroollingFooter();
 }
 
 
@@ -60,3 +61,29 @@ function headerScroll() {
         menuMobile.style.top = "25%";
     }
 }
+
+
+
+var footer = document.getElementById('footer');
+var abooutMeID = document.getElementById('abooutMeID');
+
+function scroollingFooter() {
+    if (posScroll > abooutMeID.offsetTop + abooutMeID.offsetHeight) {
+        // footer.style.transform = "translateY(0%)";
+        footer.style.opacity = "1";
+    } else {
+        // footer.style.transform = "translateY(100%)";
+        footer.style.opacity = "0";
+    }
+}
+
+
+var polygonEdit = document.getElementById("polygonEdit");
+var photoPerfil = document.getElementById("photoPerfil");
+
+photoPerfil.addEventListener("mouseenter", function () {
+    polygonEdit.style.transform = "scale(1.1)";
+});
+photoPerfil.addEventListener("mouseout", function () {
+    polygonEdit.style.transform = "scale(1.0)";
+});
