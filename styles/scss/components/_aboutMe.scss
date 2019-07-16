@@ -1,5 +1,7 @@
 .container-aboutMe-all {
-  //   background-color: rgb(226, 140, 140);
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  z-index: 20;
   width: 100%;
   padding: 91px 0 91px 0;
 
@@ -58,19 +60,19 @@
         position: relative;
         width: 293.87px;
         height: 271.8px;
-        // background-color: rgb(78, 36, 36);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
 
         .polygon-perfil {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          position: relative;
+          transition: all 0.5s;
         }
         .photo-perfil {
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          // display: none;
         }
       }
 
@@ -384,7 +386,7 @@
     @media (max-width: 510px) {
       .content-title-do {
         margin-left: 8px;
-        
+
         margin-bottom: 64px;
       }
 

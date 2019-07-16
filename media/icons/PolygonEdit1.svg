@@ -1,0 +1,23 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 292.87 265.06">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: url(#linear-gradient);
+                width: 15px;
+            }
+        </style>
+        <linearGradient id="linear-gradient" x1="154.57" y1="267.59" x2="154.57" y2="-123.32"
+            gradientTransform="matrix(1, 0, 0, -1, 0, 276)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#e75e5e" />
+            <stop offset="1" stop-color="#ffd600" />
+        </linearGradient>
+    </defs>
+    <title>PolygonEdit1</title>
+    <path id="polygon" class="cls-1"
+        d="M220.63,52.9c56.17-19,38,30.49,30,71.5,119,139-9,19.48-17.46,
+        71.5l-29.5,13-8.5,18c-49.5,72-22.5,38.5-91.5,3.5l-44.5-27.5c-39.25,
+        13.54-49.13,0-14.35-52.49-38-44.25-58.65-86.68,0-92h58.85C39.81,18.54,
+        78.63-37.1,220.63,52.9Z"
+        transform="translate(-8.13 -4.47)" />
+</svg>

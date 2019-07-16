@@ -1,0 +1,19 @@
+<svg id="Layer_1" data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="352.61" height="375.28" viewBox="0 0 352.61 375.28">
+    <defs>
+        <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+        <linearGradient id="linear-gradient" x1="181" y1="376.07" x2="181" y2="-177.41" gradientTransform="matrix(1, 0, 0, -1, 0, 386)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#e75e5e"/>
+            <stop offset="1" stop-color="#ffd600"/>
+        </linearGradient>
+    </defs>
+    <title>PolygonMax</title>
+    <path id="polygon2" class="cls-1" d="M249.58,112c153.55-91.16,36.33,30.51,28.65,71.56,183.4,162.28-8.57,19.49-16.7,71.55l-28.2,13-8.13,18c-47.33,72-166.07,
+    166.71-87.49,3.5L15.43,373.31c-37.53,13.55,32.75-111.2,66-163.76-97.31-46.74-58.43-69.51,0-92.1s50-5.48,
+    50-5.48C-32.57-76.69,113.8,21.9,249.58,112Z" transform="translate(-4.69 -4.36)"/>
+</svg>
