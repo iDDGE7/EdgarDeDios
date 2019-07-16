@@ -9,7 +9,6 @@ function zoom() {
     if (dpiInit != dpiNew) {
         dpiInit = dpiNew;
         dpi = Math.round(window.devicePixelRatio * 100);
-        console.log(dpi);
     }
 }
 
@@ -33,13 +32,11 @@ var scrollEndIntoBackground = containerAll.offsetTop + courtineBackground.offset
 var scrollInitIntoBackground = courtineBackground.scrollTop + screen.height * 0.70;
 
 function backgroundCourtineMove() {
-
     if (posScroll > scrollInitIntoBackground && posScroll < scrollEndIntoBackground) {
         courtineBackground.style.width = "50%";
     } else {
         courtineBackground.style.width = "100%";
     }
-
 }
 
 function resetTitleMobile() {
@@ -56,13 +53,11 @@ function fixedTitle() {
         contenttitle.style.position = "fixed";
         contenttitle.style.width = "50%";
         contenttitle.style.top = "0%";
-        console.log("1");
     }
     else if (posScroll >= 0 && posScroll <= window.innerHeight) {
         contenttitle.style.position = "absolute";
         contenttitle.style.width = "100%";
         contenttitle.style.top = "0%";
-        console.log("2");
     }
     else if (posScroll > window.innerHeight + courtineBackground.offsetHeight - contenttitle.offsetHeight) {
         contenttitle.style.position = "absolute";
@@ -79,7 +74,7 @@ function fixedTitle() {
 
 function hiddenTitleBackgroundMobile() {
     if (screen.width < 750 || window.innerWidth < 750) {
-        if (posScroll > window.innerHeight && posScroll < window.innerHeight + courtineBackground.offsetHeight - courtineBackground.offsetHeight * 0.3) {
+        if (posScroll > window.innerHeight - window.innerHeight * 0.2 && posScroll < window.innerHeight + courtineBackground.offsetHeight - courtineBackground.offsetHeight * 0.3) {
             courtineBackground.style.right = "-100%";
         } else if (posScroll >= 0 && posScroll <= window.innerHeight) {
             courtineBackground.style.right = "0%";
@@ -199,7 +194,7 @@ function decreaseBarsDESIG(percent) {
 
 function barsSize() {
     if (screen.width < 750 || window.innerWidth < 750) {
-        if (posScroll > scrollInitIntoBackground && posScroll < window.innerHeight + containerG1.offsetHeight - 200) {
+        if (posScroll > window.innerHeight - window.innerHeight * 0.2 && posScroll < window.innerHeight + containerG1.offsetHeight - 200) {
             increaseBarsWEB();
         } else {
             var percent = "12%";
