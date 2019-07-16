@@ -844,7 +844,7 @@
           line-height: 13px;
           text-align: center;
           color: #000000; }
-    @media (max-width: 400px) {
+    @media (max-width: 510px) {
       .container-aboutMe-all .content-element-do .content-title-do {
         margin-left: 8px;
         margin-bottom: 64px; }
