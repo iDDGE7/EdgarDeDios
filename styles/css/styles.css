@@ -165,10 +165,6 @@
   transform: scale(1);
   animation: animateHex 1s infinite alternate linear; }
 
-.hexa:hover {
-  transition: all 0.1s;
-  transform: scale(1.5); }
-
 .hexa1 {
   top: 0px;
   left: 75px;
@@ -284,6 +280,36 @@
     transform: scale(1); }
   to {
     transform: scale(1.2); } }
+
+.main-phrase {
+  position: relative;
+  top: 50%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff; }
+
+.main-think {
+  position: absolute;
+  bottom: 10%;
+  width: 90%;
+  max-width: 552px;
+  font-family: Poppins;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  background: -webkit-linear-gradient(#1fc5dc, #cccccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .container-all .container-background-all {
   position: relative;
