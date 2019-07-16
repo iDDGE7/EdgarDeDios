@@ -1,0 +1,137 @@
+.container-projects-all {
+  width: 100%;
+  // height: 1229px;
+  padding: 87px 0 87px 0;
+  background: linear-gradient(180deg, #4d5ded 0%, #1fdc81 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .container-title-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 245px;
+    margin-bottom: 87px;
+    // background-color: rgb(100, 9, 9);
+
+    .title-projects {
+      font-family: "roboto", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 36px;
+      text-align: center;
+
+      color: #ffffff;
+
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      margin-bottom: 18px;
+    }
+    .description-projects {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+
+      color: #c9c6c6;
+    }
+  }
+
+  .container-grid-projects {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 1297px;
+    // height: 894px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    grid-auto-rows: minmax(400px, auto);
+    .content-project {
+      position: relative;
+      overflow: hidden;
+
+      .itemProject {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.5s;
+      }
+
+      .itemProject:hover {
+        transition: all 0.5s;
+        transform: scale(1.2);
+      }
+
+      .information-project {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.26);
+        bottom: 0;
+        left: 0;
+        transition: all 0.5s;
+        padding: 20px 50px 2px 50px;
+
+        .title-project-info {
+          margin-bottom: 14px;
+          font-family: "Poppins", sans-serif;
+          font-style: "light";
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 30px;
+
+          color: #ffffff;
+        }
+
+        .description-project-info {
+          //   display: none;
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 19px;
+          max-width: 400px;
+          color: #ffffff;
+          transition: all 0.3s;
+          height: 0;
+          overflow: hidden;
+        }
+
+        &:hover {
+          padding: 20px 50px 20px 50px;
+          .description-project-info {
+            height: 100px;
+            overflow: hidden;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+
+    .content-project-1 {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+    .content-project-2 {
+      grid-row: span 1;
+      grid-column: span 2;
+    }
+    .content-project-3 {
+      grid-row: span 2;
+    }
+
+    @media (max-width: 1274px) {
+      .content-project-3 {
+        grid-column: span 2;
+      }
+    }
+
+    .content-project-4 {
+      grid-column: span 2;
+      grid-row: span 1;
+      object-fit: cover;
+    }
+  }
+}

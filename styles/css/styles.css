@@ -482,6 +482,369 @@
         width: 100%;
         height: 100%; } }
 
+.container-projects-all {
+  width: 100%;
+  padding: 87px 0 87px 0;
+  background: linear-gradient(180deg, #4d5ded 0%, #1fdc81 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container-projects-all .container-title-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 245px;
+    margin-bottom: 87px; }
+    .container-projects-all .container-title-projects .title-projects {
+      font-family: "roboto", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 36px;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-bottom: 18px; }
+    .container-projects-all .container-title-projects .description-projects {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #c9c6c6; }
+  .container-projects-all .container-grid-projects {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 1297px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    grid-auto-rows: minmax(400px, auto); }
+    .container-projects-all .container-grid-projects .content-project {
+      position: relative;
+      overflow: hidden; }
+      .container-projects-all .container-grid-projects .content-project .itemProject {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.5s; }
+      .container-projects-all .container-grid-projects .content-project .itemProject:hover {
+        transition: all 0.5s;
+        transform: scale(1.2); }
+      .container-projects-all .container-grid-projects .content-project .information-project {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.26);
+        bottom: 0;
+        left: 0;
+        transition: all 0.5s;
+        padding: 20px 50px 2px 50px; }
+        .container-projects-all .container-grid-projects .content-project .information-project .title-project-info {
+          margin-bottom: 14px;
+          font-family: "Poppins", sans-serif;
+          font-style: "light";
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 30px;
+          color: #ffffff; }
+        .container-projects-all .container-grid-projects .content-project .information-project .description-project-info {
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 19px;
+          max-width: 400px;
+          color: #ffffff;
+          transition: all 0.3s;
+          height: 0;
+          overflow: hidden; }
+        .container-projects-all .container-grid-projects .content-project .information-project:hover {
+          padding: 20px 50px 20px 50px; }
+          .container-projects-all .container-grid-projects .content-project .information-project:hover .description-project-info {
+            height: 100px;
+            overflow: hidden;
+            transition: all 0.3s; }
+    .container-projects-all .container-grid-projects .content-project-1 {
+      grid-row: span 2;
+      grid-column: span 2; }
+    .container-projects-all .container-grid-projects .content-project-2 {
+      grid-row: span 1;
+      grid-column: span 2; }
+    .container-projects-all .container-grid-projects .content-project-3 {
+      grid-row: span 2; }
+    @media (max-width: 1274px) {
+      .container-projects-all .container-grid-projects .content-project-3 {
+        grid-column: span 2; } }
+    .container-projects-all .container-grid-projects .content-project-4 {
+      grid-column: span 2;
+      grid-row: span 1;
+      object-fit: cover; }
+
+.container-aboutMe-all {
+  width: 100%;
+  padding: 91px 0 91px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container-aboutMe-all .container-title-aboutMe {
+    width: 191px;
+    height: 76px;
+    margin-bottom: 84px; }
+    .container-aboutMe-all .container-title-aboutMe .title-aboutMe {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      color: #454343;
+      margin-bottom: 13px; }
+    .container-aboutMe-all .container-title-aboutMe .title-description-aboutMe {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #c9c6c6; }
+  .container-aboutMe-all .content-element-aboutMe {
+    width: 90%;
+    max-width: 1468px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 125px; }
+    .container-aboutMe-all .content-element-aboutMe .content-perfil-resume {
+      width: 621px;
+      height: 271.8px;
+      margin-right: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-img-perfil {
+        position: relative;
+        width: 293.87px;
+        height: 271.8px; }
+        .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-img-perfil .polygon-perfil {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+        .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-img-perfil .photo-perfil {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+      .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-resume-perfil {
+        width: 274px;
+        height: 221px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-resume-perfil .name {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 30px;
+          color: #484848; }
+        .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-resume-perfil .content-resume {
+          position: relative;
+          width: 274px;
+          height: 170px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-resume-perfil .content-resume .cornerUp {
+            position: absolute;
+            top: 0;
+            left: 0; }
+          .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-resume-perfil .content-resume .resumen {
+            width: 90%;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 22px;
+            color: #686868; }
+          .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-resume-perfil .content-resume .cornerDown {
+            position: absolute;
+            bottom: 0;
+            right: 0; }
+    .container-aboutMe-all .content-element-aboutMe .content-grid-photos {
+      width: 592px;
+      height: 215px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 3%);
+      grid-gap: 5px;
+      grid-auto-rows: 105px; }
+      .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme .img-item-photos {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.5s; }
+      .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme1 {
+        grid-column: span 10;
+        grid-row: span 1; }
+        .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme1 .img-item-photos:hover {
+          transform-origin: right;
+          height: 150%;
+          transform: translateY(-40%);
+          transition: all 0.3s; }
+      .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme2 {
+        grid-column: span 13;
+        grid-row: span 1; }
+        .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme2 .img-item-photos:hover {
+          transform-origin: right;
+          height: 150%;
+          transform: translateY(-40%);
+          transition: all 0.3s; }
+      .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme3 {
+        grid-column: 3 / span 8;
+        grid-row: 2 / span 1; }
+        .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme3 .img-item-photos:hover {
+          transform-origin: right;
+          height: 150%;
+          transform: translateY(15%);
+          transition: all 0.3s; }
+      .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme4 {
+        grid-column: 11 / span 9;
+        grid-row: 2 / span 1; }
+        .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme4 .img-item-photos:hover {
+          transform-origin: right;
+          height: 150%;
+          transform: translateY(15%);
+          transition: all 0.3s; }
+    @media (max-width: 1288px) {
+      .container-aboutMe-all .content-element-aboutMe {
+        width: initial;
+        max-width: initial;
+        flex-direction: column; }
+        .container-aboutMe-all .content-element-aboutMe .content-perfil-resume {
+          margin-right: initial;
+          margin-bottom: 50px; }
+        .container-aboutMe-all .content-element-aboutMe .content-grid-photos {
+          padding: 20px;
+          margin-top: 50px;
+          width: initial;
+          height: initial;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
+          grid-gap: 5px;
+          grid-auto-rows: minmax(200px, auto); }
+          .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme1 {
+            grid-column: span 6;
+            grid-row: 1 / span 1; }
+          .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme2 {
+            grid-column: span 8;
+            grid-row: 1 / span 1; }
+          .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme3 {
+            grid-column: 3 / span 4;
+            grid-row: 2 / span 1; }
+          .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme4 {
+            grid-column: 7 / span 5;
+            grid-row: 2 / span 1; } }
+    @media (max-width: 715px) {
+      .container-aboutMe-all .content-element-aboutMe .content-perfil-resume {
+        width: initial;
+        height: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-img-perfil {
+          position: relative;
+          width: 293.87px;
+          height: 271.8px; }
+          .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-img-perfil .polygon-perfil {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
+          .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-img-perfil .photo-perfil {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
+        .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-resume-perfil {
+          margin-top: 15px;
+          width: initial;
+          width: 85%;
+          height: initial;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center; }
+          .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-resume-perfil .name {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 30px;
+            padding: 10px 0 10px 0;
+            color: #484848; }
+          .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-resume-perfil .content-resume {
+            position: relative;
+            width: initial;
+            width: 100%;
+            height: initial;
+            padding: 10px 0 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-resume-perfil .content-resume .cornerUp {
+              position: absolute;
+              top: 0;
+              left: 0; }
+            .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-resume-perfil .content-resume .resumen {
+              width: 90%;
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: 300;
+              font-size: 13px;
+              line-height: 22px;
+              text-align: center; }
+            .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-resume-perfil .content-resume .cornerDown {
+              position: absolute;
+              bottom: 0;
+              right: 0; } }
+  .container-aboutMe-all .content-element-do {
+    width: 100%;
+    max-width: 495px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container-aboutMe-all .content-element-do .content-title-do {
+      margin-left: 25px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      text-align: center;
+      color: #706c6c;
+      margin-bottom: 64px; }
+    .container-aboutMe-all .content-element-do .content-items-do {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .container-aboutMe-all .content-element-do .content-items-do .item-do {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .container-aboutMe-all .content-element-do .content-items-do .item-do .icon-do {
+          margin-bottom: 18px; }
+        .container-aboutMe-all .content-element-do .content-items-do .item-do .name-do {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 11px;
+          line-height: 13px;
+          text-align: center;
+          color: #000000; }
+
 * {
   padding: 0;
   margin: 0;
