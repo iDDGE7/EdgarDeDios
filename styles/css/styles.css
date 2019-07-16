@@ -844,6 +844,16 @@
           line-height: 13px;
           text-align: center;
           color: #000000; }
+    @media (max-width: 400px) {
+      .container-aboutMe-all .content-element-do .content-title-do {
+        margin-left: 8px;
+        margin-bottom: 64px; }
+      .container-aboutMe-all .content-element-do .content-items-do {
+        width: initial;
+        flex-direction: column;
+        justify-content: initial; }
+        .container-aboutMe-all .content-element-do .content-items-do .item-do {
+          margin-bottom: 40px; } }
 
 * {
   padding: 0;
