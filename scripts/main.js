@@ -34,11 +34,16 @@ var onload = window.onload = function () {
     var contenedor = document.getElementById('onload-chargin');
     var elipseLoad = document.getElementById('elipse-load');
     var polygonLoad = document.getElementById('polygon-load');
-  
+
     contenedor.style.visibility = 'hidden';
     contenedor.style.opacity = '0';
-    elipseLoad.style.animationName = "initial";
-    polygonLoad.style.animationName = "initial";
+
+    setTimeout(function () {
+        elipseLoad.style.animationName = "initial";
+        polygonLoad.style.animationName = "initial";
+    }, 5000);
+
+
 }
 
 // var posScroll;
