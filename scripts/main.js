@@ -32,10 +32,13 @@ var onload = window.onload = function () {
     // load animation //
 
     var contenedor = document.getElementById('onload-chargin');
+    var elipseLoad = document.getElementById('elipse-load');
+    var polygonLoad = document.getElementById('polygon-load');
   
     contenedor.style.visibility = 'hidden';
     contenedor.style.opacity = '0';
-    contenedor.style.display = 'none';
+    elipseLoad.style.animationName = "initial";
+    polygonLoad.style.animationName = "initial";
 }
 
 // var posScroll;
