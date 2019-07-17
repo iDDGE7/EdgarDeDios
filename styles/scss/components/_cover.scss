@@ -15,13 +15,21 @@
 }
 
 .container-graphic-hexa {
-  position: relative;
+  position: absolute;
   top: 50%;
-  transform: translateY(-100%);
+  transform: translate(-50%, -120%);
+  left: 50%;
   // margin-top: 115px;
   width: 287px;
   height: 216px;
   // background-color: rgb(129, 98, 98);
+}
+
+@media (max-width: 600px) {
+  .container-graphic-hexa {
+    top: 60%;
+    transform: translate(-50%, -120%) scale(0.8);
+  }
 }
 
 .hexa {
@@ -183,7 +191,7 @@
     // transform: scale(1) rotateX(0deg);
   }
   to {
-    transform: scale(1.3);
+    transform: scale(1.2);
     // transform: scale(1.2) rotateX(180deg);
   }
 }

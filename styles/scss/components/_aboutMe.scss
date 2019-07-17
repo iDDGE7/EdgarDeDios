@@ -258,19 +258,6 @@
             position: relative;
             width: 293.87px;
             height: 271.8px;
-
-            .polygon-perfil {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            }
-            .photo-perfil {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            }
           }
 
           .content-resume-perfil {
@@ -376,7 +363,7 @@
           margin-bottom: 18px;
           transition: all 0.3s;
           transform: scale(1.1);
-          &:hover{
+          &:hover {
             transition: all 0.3s;
             transform: scale(1.3);
           }
