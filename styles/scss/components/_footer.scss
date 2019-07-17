@@ -1,22 +1,16 @@
 .container-footer-all {
-  // transform: translateY(100%);
-  opacity: 0;
   z-index: 10;
   width: 100%;
   padding: 50px 0 50px 0;
-  // background-color: rgb(41, 41, 41);
-  // background: url(../../../media/images/footer3.jpg) center fixed no-repeat;
-  background-color: rgb(37, 37, 37);
+  background: url(../../../media/images/footer4.jpg)fixed  center no-repeat;
   background-size: cover;
+  filter: saturate(150%);
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  transition: all 1s;
-
   .content-contact {
-    // background-color: rgb(62, 79, 175);
     position: relative;
     width: 80%;
     max-width: 312px;
@@ -66,6 +60,17 @@
       color: #ffffff;
 
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      // user-select: auto;
+    }
+
+    #emailID {
+      user-select: initial;
+      -moz-user-select: initial;
+      -webkit-user-select: initial;
+
+      &::selection {
+        background-color: rgb(250, 114, 51);
+      }
     }
     .cornerDown-contact {
       position: absolute;
@@ -103,5 +108,18 @@
 
     color: #ffffff;
     margin-top: 55px;
+  }
+}
+
+.link-social {
+  .fill-social {
+    fill: rgb(255, 255, 255);
+    transition: all 0.2s;
+  }
+  &:hover {
+    .fill-social {
+      transition: all 0.2s;
+      fill: rgb(250, 114, 51);
+    }
   }
 }

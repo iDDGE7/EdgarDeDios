@@ -4,61 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="media/icons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="60x60" href="media/icons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="72x72" href="media/icons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="76x76" href="media/icons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="114x114" href="media/icons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="120x120" href="media/icons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="144x144" href="media/icons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="152x152" href="media/icons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/icons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="192x192" href="media/icons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/icons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="media/icons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/icons/favicon.svg">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/css/styles.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inicio</title>
+    <meta name="author" content="Edgar de Dios">
+    <title>Edgar de Dios</title>
 </head>
 
-<body>
+<body ondragstart="return false;" ondrop="return false;">
+    <div class="onload-chargin" id="onload-chargin">
+        <div class="container-load">
+            <img src="media/loading/Group.svg" alt="" class="elipse-load">
+            <img src="media/loading/Polygon.svg" alt="" class="polygon-load">
+        </div>
+    </div>
     <div id="header-background"></div>
     <div class="container-menu-mobile" id="menu-mobile">
         <div class="center-menu-mobile">
             <ul class="item-list-nav-mobile">
-                <li class="item-nav-mobile">
+                <a href="#cover" class="item-nav-mobile">
                     <img src="media/icons/home.svg" alt="Home" class="icon-menu">
                     <p class="name-item-nav">Home</p>
-                </li>
-                <li class="item-nav-mobile">
-                    <img src="media/icons/skills.svg" alt="Skills" class="icon-menu">
+                </a>
+                <a href="#backgroundID" class="item-nav-mobile">
+                    <img src="media/icons/background.svg" alt="Skills" class="icon-menu">
                     <p class="name-item-nav">Background</p>
-                </li>
-                <li class="item-nav-mobile">
+                </a>
+                <a href="#ProjectsID" class="item-nav-mobile">
                     <img src="media/icons/projects.svg" alt="Projects" class="icon-menu">
                     <p class="name-item-nav">Projects</p>
-                </li>
-                <li class="item-nav-mobile">
-                    <img src="media/icons/profile.svg" alt="Profile" class="icon-menu">
+                </a>
+                <a href="#aboutMeID" class="item-nav-mobile">
+                    <img src="media/icons/aboutMe.svg" alt="Profile" class="icon-menu">
                     <p class="name-item-nav">About me</p>
-                </li>
+                </a>
             </ul>
         </div>
     </div>
     <header class="header" id="header">
         <div class="center-content-header">
-            <div class="conteiner-logo-main">
+            <a href="./index.html" class="conteiner-logo-main">
                 DDGE
-            </div>
+            </a>
             <nav class="nav-container">
                 <ul class="item-list-nav" ondragstart="return false">
-                    <li class="item-nav">
+                    <a href="#cover" class="item-nav" id="anchorHome">
                         <img src="media/icons/home.svg" alt="Home" class="icon-menu">
                         <p class="name-item-nav">Home</p>
-                    </li>
-                    <li class="item-nav">
-                        <img src="media/icons/skills.svg" alt="Skills" class="icon-menu">
+                    </a>
+                    <a href="#backgroundID" class="item-nav" id="anchorBackground">
+                        <img src="media/icons/background.svg" alt="Skills" class="icon-menu">
                         <p class="name-item-nav">Background</p>
-                    </li>
-                    <li class="item-nav">
+                    </a>
+                    <a href="#ProjectsID" class="item-nav" id="anchorProjects">
                         <img src="media/icons/projects.svg" alt="Projects" class="icon-menu">
                         <p class="name-item-nav">Projects</p>
-                    </li>
-                    <li class="item-nav">
-                        <img src="media/icons/profile.svg" alt="Profile" class="icon-menu">
+                    </a>
+                    <a href="#aboutMeID" class="item-nav" id="anchorAboutMe">
+                        <img src="media/icons/aboutMe.svg" alt="Profile" class="icon-menu">
                         <p class="name-item-nav">About me</p>
-                    </li>
+                    </a>
                 </ul>
             </nav>
             <div class="conteiner-button-menu" id="buttonMenu">
@@ -94,12 +114,13 @@
 
 
         </div>
-        
-        <p class="main-think">My best hobby is to learn everything that I like and to do something good for myself and for those around
+
+        <p class="main-think">My best hobby is to learn everything that I like and to do something good for myself and
+            for those around
             me</p>
     </section>
     <section class="container-all" id="containerAll">
-        <section class="container-background-all">
+        <section class="container-background-all" id="backgroundID">
 
             <div class="container-background-graphs">
                 <div class="container-graph container-graph1" id="containerG1">
@@ -256,7 +277,7 @@
                 <div class="container-graph container-graph3" id="containerG3">
                     <div class="content-graph">
                         <div class="content-title-graph">
-                            <img src="media/icons/EllipseDB.svg" class="elipse-title-graph" alt="">
+                            <img src="media/icons/EllipseGraph-DB.svg" class="elipse-title-graph" alt="">
                             <h2 class="title-graph">Data Base</h2>
                         </div>
                         <div class="content-levels-graph">
@@ -271,7 +292,7 @@
                                 <div class="opaque-bar"></div>
                             </div>
                             <div class="container-color-bars">
-                                <img src="media/icons/Rectanglegreen.svg" alt="" class="shape-form-graphic-vertical">
+                                <img src="media/icons/RectangleGreen.svg" alt="" class="shape-form-graphic-vertical">
                                 <div class="bar bar1-db" id="bar1db">
                                     <p class="skill"> SQL</p>
                                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" class="elipse-level"
@@ -299,7 +320,7 @@
                 <div class="container-graph container-graph4" id="containerG4">
                     <div class="content-graph">
                         <div class="content-title-graph">
-                            <img src="media/icons/EllipseDes.svg" class="elipse-title-graph" alt="">
+                            <img src="media/icons/EllipseGraph-Designer.svg" class="elipse-title-graph" alt="">
                             <h2 class="title-graph">Designer</h2>
                         </div>
                         <div class="content-levels-graph">
@@ -316,7 +337,7 @@
                                 <div class="opaque-bar"></div>
                             </div>
                             <div class="container-color-bars">
-                                <img src="media/icons/Rectangleviolet.svg" alt="" class="shape-form-graphic-vertical">
+                                <img src="media/icons/RectangleViolet.svg" alt="" class="shape-form-graphic-vertical">
                                 <div class="bar bar1-designer" id="bar1designer">
                                     <p class="skill"> Photoshop</p>
                                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" class="elipse-level"
@@ -369,52 +390,59 @@
             </div>
 
         </section>
-        <section class="container-projects-all">
+        <section class="container-projects-all" id="ProjectsID">
             <div class="container-title-projects">
                 <h3 class="title-projects">PROJECTS</h3>
                 <h4 class="description-projects">Some personal projects</h4>
             </div>
             <div class="container-grid-projects">
                 <div class="content-project content-project-1">
-                    <img src="media/images/1.jpg" alt="" class="itemProject">
+                    <img src="media/images/portfolio.jpg" alt="" class="itemProject">
                     <div class="information-project">
-                        <h2 class="title-project-info">Forms Data Base</h2>
-                        <p class="description-project-info">This project was make for the data base class, the objective
-                            of this was to teach us how to
-                            relate a database and how to manipulate it from a web server</p>
+                        <h2 class="title-project-info">This Web Site</h2>
+                        <p class="description-project-info">
+                            This website I did with the intention of learning and further strengthen my knowledge of the
+                            functions of css and scss with html.
+                            Besides, it's like a way to share my background with others.
+                        </p>
                     </div>
                 </div>
                 <div class="content-project content-project-2">
-                    <img src="media/images/2.jpg" alt="" class="itemProject">
+                    <img src="media/images/componentsCSS.jpg" alt="" class="itemProject">
                     <div class="information-project">
                         <h2 class="title-project-info">Components CSS</h2>
-                        <p class="description-project-info">This project was make for the data base class, the objective
-                            of this was to teach us how to
-                            relate a database and how to manipulate it from a web server</p>
+                        <p class="description-project-info">
+                            I really like the idea of creating visually appealing components that are accessible to all
+                            kinds of people.
+                            That's why I like to design templates and then pass them to html and css code.
+                        </p>
                     </div>
                 </div>
                 <div class="content-project content-project-3">
-                    <img src="media/images/3.jpg" alt="" class="itemProject">
+                    <img src="media/images/dbProject.jpg" alt="" class="itemProject">
                     <div class="information-project">
-                        <h2 class="title-project-info">Portfolio</h2>
-                        <p class="description-project-info">This project was make for the data base class, the objective
+                        <h2 class="title-project-info">Forms Data Base</h2>
+                        <p class="description-project-info">
+                            This project was make for the data base class, the objective
                             of this was to teach us how to
-                            relate a database and how to manipulate it from a web server</p>
+                            relate a database and how to manipulate it from a web server
+                        </p>
                     </div>
                 </div>
                 <div class="content-project content-project-4">
-                    <img src="media/images/4.jpg" alt="" class="itemProject">
+                    <img src="media/images/adventisPage.jpg" alt="" class="itemProject">
                     <div class="information-project">
                         <h2 class="title-project-info">Page School</h2>
-                        <p class="description-project-info">This project was make for the data base class, the objective
-                            of this was to teach us how to
-                            relate a database and how to manipulate it from a web server</p>
+                        <p class="description-project-info">
+                            I am working on a website for a high school, it is very interesting for me to be in this
+                            type of projects, in addition to working together with some colleagues.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container-aboutMe-all" id="abooutMeID">
+        <section class="container-aboutMe-all" id="aboutMeID">
             <div class="container-title-aboutMe">
                 <h2 class="title-aboutMe">
                     About me
@@ -426,33 +454,37 @@
             <div class="content-element-aboutMe">
                 <div class="content-perfil-resume">
                     <div class="content-img-perfil">
-                        <img src="media/icons/Polygonws.svg" alt="" class="polygon-perfil" id="polygonEdit">
-                        <img src="media/icons/photoperfil.svg" alt="" class="photo-perfil" id="photoPerfil">
+                        <img src="media/icons/Polygon-Profile.svg" alt="" class="polygon-perfil" id="polygonEdit">
+                        <img src="media/images/profile.jpg" alt="" class="photo-perfil" id="photoPerfil">
                     </div>
                     <div class="content-resume-perfil">
                         <h2 class="name">Edgar de Dios</h2>
                         <div class="content-resume">
-                            <img src="media/icons/cornerUp.svg" alt="" class="cornerUp">
+                            <img src="media/icons/cornerUp-profile.svg" alt="" class="cornerUp">
                             <p class="resumen">Student of the engineering in computer systems at the University of
                                 Montemorelos, I like to learn new technologies, I am very interested in the area of Web
                                 design, the area of software development for devices especially Android and Desktop
                                 Software.</p>
-                            <img src="media/icons/cornerDown.svg" alt="" class="cornerDown">
+                            <img src="media/icons/cornerDown-profile.svg" alt="" class="cornerDown">
                         </div>
                     </div>
                 </div>
                 <div class="content-grid-photos">
                     <div class="item-grid-aboutme item-grid-aboutme1">
-                        <img src="media/images/2.jpg" alt="" class="img-item-photos">
+                        <img src="https://scontent.fmty1-1.fna.fbcdn.net/v/t31.0-8/21762502_1458345197534386_8450872931792334355_o.jpg?_nc_cat=105&_nc_oc=AQm1JxkSv7RPK0Ne82arBVcN0YNcXSVEJx66kdz1YFrBl13HFY0Isk2UtCwch4j-MXc&_nc_ht=scontent.fmty1-1.fna&oh=e73cfbd0edc330248c178184a1380576&oe=5DB9D2E8"
+                            alt="" class="img-item-photos">
                     </div>
                     <div class="item-grid-aboutme item-grid-aboutme2">
-                        <img src="media/images/1.jpg" alt="" class="img-item-photos">
+                        <img src="https://live.staticflickr.com/981/27002299677_cb68f7b363_b.jpg" alt=""
+                            class="img-item-photos">
                     </div>
                     <div class="item-grid-aboutme item-grid-aboutme3">
-                        <img src="media/images/3.jpg" alt="" class="img-item-photos">
+                        <img src="https://live.staticflickr.com/909/41870414071_d9e5b6c364_b.jpg" alt=""
+                            class="img-item-photos">
                     </div>
                     <div class="item-grid-aboutme item-grid-aboutme4">
-                        <img src="media/images/4.jpg" alt="" class="img-item-photos">
+                        <img src="https://scontent.fmty1-1.fna.fbcdn.net/v/t31.0-8/21687030_1458343380867901_1351028475718165655_o.jpg?_nc_cat=102&_nc_oc=AQlxYty4-pqEVlGYCvsjDA3bIt1sesbwHtR3Z35G70qOIUX0RD6yhNp-oSzomvwcnfA&_nc_ht=scontent.fmty1-1.fna&oh=cb78ddb58e20d9c9bf5160bca42a09d5&oe=5DA377FE"
+                            alt="" class="img-item-photos">
                     </div>
                 </div>
             </div>
@@ -479,16 +511,81 @@
 
         <footer class="container-footer-all" id="footer">
             <div class="content-contact">
-                <img src="media/icons/cornerUp.svg" alt="decoration" class="cornerUp-contact">
+                <img src="media/icons/cornerUp-profile.svg" alt="decoration" class="cornerUp-contact">
                 <div class="title-contact">Contact</div>
                 <div class="container-social-networks">
-                    <img src="media/icons/linkedin.svg" alt="linkedin" class="icon-social">
-                    <img src="media/icons/twitter.svg" alt="twitter" class="icon-social">
-                    <img src="media/icons/instagram.svg" alt="instagram" class="icon-social">
-                    <img src="media/icons/facebook.svg" alt="facebook" class="icon-social">
+                    <a href="https://www.linkedin.com/in/ddge/" target="_black" class="link-social">
+
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-social"
+                                d="M27.8702 0H2.77181C1.241 0 0 1.17728 0 2.6295V26.4391C0 27.8914 1.241 29.0687 2.77181 29.0687H27.8701C29.401 29.0687 30.642 27.8914 30.642 26.4391V2.6295C30.642 1.17728 29.401 0 27.8702 0ZM9.48192 25.0999C9.48192 25.5225 9.1208 25.8651 8.67529 25.8651H5.24162C4.79611 25.8651 4.43498 25.5225 4.43498 25.0999V11.4451C4.43498 11.0224 4.79611 10.6799 5.24162 10.6799H8.67529C9.1208 10.6799 9.48192 11.0224 9.48192 11.4451V25.0999ZM6.95845 9.3927C5.15691 9.3927 3.69645 8.00722 3.69645 6.29817C3.69645 4.58913 5.15691 3.20365 6.95845 3.20365C8.75999 3.20365 10.2205 4.58913 10.2205 6.29817C10.2205 8.00722 8.76007 9.3927 6.95845 9.3927ZM27.4262 25.1615C27.4262 25.55 27.0941 25.8651 26.6845 25.8651H22.9999C22.5904 25.8651 22.2583 25.55 22.2583 25.1615V18.7566C22.2583 17.8012 22.5537 14.5697 19.6262 14.5697C17.3554 14.5697 16.8948 16.7816 16.8023 17.7742V25.1615C16.8023 25.55 16.4703 25.8651 16.0606 25.8651H12.497C12.0875 25.8651 11.7554 25.55 11.7554 25.1615V11.3834C11.7554 10.9949 12.0875 10.6799 12.497 10.6799H16.0606C16.4702 10.6799 16.8023 10.9949 16.8023 11.3834V12.5747C17.6443 11.376 18.8957 10.4507 21.56 10.4507C27.4599 10.4507 27.4262 15.6798 27.4262 18.5528V25.1615Z"
+                                fill="white" />
+                        </svg>
+
+                    </a>
+                    <a href="https://twitter.com/iDDGE7" target="_black" class="link-social">
+                        <svg width="38" height="30" viewBox="0 0 38 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-social"
+                                d="M37.079 3.38159C36.258 3.7259 35.4057 3.99752 34.5312 4.19417C35.4948 3.32817 36.2193 2.245 36.6281 1.03597C36.7447 0.69082 36.3483 0.392356 36.0188 0.57716C34.8022 1.25963 33.4918 1.77161 32.1238 2.09904C32.0444 2.11804 31.9625 2.12767 31.8803 2.12767C31.6312 2.12767 31.3889 2.04017 31.1984 1.88135C29.7429 0.668156 27.8709 0 25.9274 0C25.0864 0 24.2374 0.123969 23.4037 0.3685C20.8206 1.1262 18.8276 3.14132 18.2023 5.62753C17.9677 6.56007 17.9042 7.49346 18.0134 8.40172C18.0259 8.50609 17.9737 8.57893 17.9416 8.6131C17.8851 8.673 17.805 8.70733 17.7218 8.70733C17.7125 8.70733 17.703 8.70691 17.6935 8.70606C12.0394 8.20924 6.94066 5.63298 3.33664 1.45193C3.15286 1.23867 2.80043 1.26483 2.65394 1.50246C1.94818 2.64758 1.57521 3.95731 1.57521 5.29004C1.57521 7.33251 2.44286 9.25732 3.94997 10.6605C3.31619 10.5184 2.70277 10.2946 2.13296 9.99525C1.85728 9.85041 1.5181 10.0366 1.51422 10.3348C1.47476 13.369 3.35313 16.0689 6.16698 17.2847C6.11031 17.2859 6.05364 17.2865 5.99689 17.2865C5.55085 17.2865 5.09924 17.2458 4.65474 17.1655C4.34429 17.1094 4.08348 17.3879 4.17988 17.6726C5.0932 20.3693 7.54831 22.3571 10.4863 22.8084C8.04795 24.3564 5.20843 25.173 2.25305 25.173L1.3317 25.1725C1.04783 25.1725 0.807744 25.3475 0.735402 25.6076C0.664141 25.8637 0.795402 26.1338 1.03747 26.267C4.36771 28.1 8.16633 29.0687 12.0243 29.0687C15.4013 29.0687 18.5602 28.4349 21.4133 27.185C24.0289 26.0391 26.3402 24.4011 28.2831 22.3164C30.093 20.3745 31.5083 18.1328 32.4895 15.6535C33.4249 13.2903 33.9193 10.7686 33.9193 8.36116V8.24648C33.9193 7.85991 34.1041 7.49618 34.4266 7.24859C35.6505 6.3088 36.7163 5.20254 37.5942 3.96054C37.826 3.6326 37.4604 3.22158 37.079 3.38159Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/edgarddg7" target="_black" class="link-social">
+                        <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-social"
+                                d="M22.1953 0H9.84411C4.82448 0 0.740723 3.87407 0.740723 8.63597V20.353C0.740723 25.1149 4.82448 28.989 9.84411 28.989H22.1953C27.2149 28.989 31.2987 25.1149 31.2987 20.353V8.63597C31.2987 3.87407 27.2149 0 22.1953 0ZM28.2246 20.353C28.2246 23.5119 25.5252 26.0727 22.1953 26.0727H9.84411C6.51427 26.0727 3.81485 23.5119 3.81485 20.353V8.63597C3.81485 5.47705 6.51427 2.91629 9.84411 2.91629H22.1953C25.5252 2.91629 28.2246 5.47705 28.2246 8.63597V20.353Z"
+                                fill="white" />
+                            <path class="fill-social"
+                                d="M16.0197 6.99683C11.6618 6.99683 8.11633 10.3602 8.11633 14.4944C8.11633 18.6285 11.6618 21.9919 16.0197 21.9919C20.3776 21.9919 23.9231 18.6285 23.9231 14.4944C23.9231 10.3602 20.3776 6.99683 16.0197 6.99683ZM16.0197 19.0757C13.3526 19.0757 11.1905 17.0246 11.1905 14.4944C11.1905 11.9642 13.3526 9.91312 16.0197 9.91312C18.6869 9.91312 20.849 11.9642 20.849 14.4944C20.849 17.0246 18.6868 19.0757 16.0197 19.0757Z"
+                                fill="white" />
+                            <path class="fill-social"
+                                d="M23.9384 8.84955C24.9843 8.84955 25.8322 8.04518 25.8322 7.05295C25.8322 6.06071 24.9843 5.25635 23.9384 5.25635C22.8924 5.25635 22.0446 6.06071 22.0446 7.05295C22.0446 8.04518 22.8924 8.84955 23.9384 8.84955Z"
+                                fill="white" />
+                        </svg>
+
+
+                    </a>
+                    <a href="https://www.facebook.com/EDDG6" target="_black" class="link-social">
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-social"
+                                d="M27.7494 0H4.70733C2.35987 0 0.456787 1.7537 0.456787 3.91707V25.1515C0.456787 27.3149 2.35979 29.0686 4.70733 29.0686H16.0716L16.0909 18.681H13.1625C12.7819 18.681 12.473 18.3975 12.4716 18.0467L12.4575 14.6984C12.4561 14.3458 12.7659 14.0592 13.1485 14.0592H16.0716V10.8239C16.0716 7.06928 18.5599 5.02488 22.1944 5.02488H25.1768C25.5583 5.02488 25.8678 5.30996 25.8678 5.66167V8.485C25.8678 8.83657 25.5586 9.12158 25.1771 9.12179L23.3469 9.12257C21.3704 9.12257 20.9876 9.98812 20.9876 11.2583V14.0593H25.3308C25.7446 14.0593 26.0657 14.3923 26.0169 14.771L25.5863 18.1194C25.5451 18.4398 25.2502 18.6812 24.9001 18.6812H21.007L20.9876 29.0687H27.7495C30.097 29.0687 32 27.315 32 25.1517V3.91707C31.9999 1.7537 30.0969 0 27.7494 0Z"
+                                fill="white" />
+                        </svg>
+
+                    </a>
+                    <a href="https://github.com/DDGE7" target="_black" class="link-social">
+                        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-social"
+                                d="M11.5421 23.3733C11.3196 23.411 11.2224 23.5058 11.2503 23.6571C11.278 23.8084 11.403 23.859 11.6252 23.8084C11.8477 23.758 11.9448 23.6695 11.9169 23.5435C11.8893 23.4048 11.7643 23.3479 11.5421 23.3733Z"
+                                fill="white" />
+                            <path class="fill-social"
+                                d="M10.3543 23.5249C10.1321 23.5249 10.021 23.5939 10.021 23.7329C10.021 23.8969 10.1391 23.9661 10.3751 23.941C10.5974 23.941 10.7086 23.8715 10.7086 23.7329C10.7086 23.5691 10.5905 23.4995 10.3543 23.5249Z"
+                                fill="white" />
+                            <path class="fill-social"
+                                d="M8.7292 23.4676C8.67374 23.6064 8.76408 23.7008 8.99999 23.7516C9.20832 23.8269 9.34032 23.7892 9.39578 23.6379C9.43752 23.4993 9.34718 23.3986 9.12499 23.3351C8.91659 23.2848 8.78473 23.3284 8.7292 23.4676Z"
+                                fill="white" />
+                            <path class="fill-social"
+                                d="M30.2396 1.59908C29.0659 0.533093 27.6531 0 25.9999 0H5.99998C4.34735 0 2.93399 0.533093 1.76026 1.59908C0.586827 2.66527 0 3.94921 0 5.45058V23.6195C0 25.1209 0.586827 26.4047 1.76026 27.4707C2.93391 28.5369 4.34735 29.07 5.99998 29.07H10.6666C10.9719 29.07 11.2013 29.0605 11.354 29.0419C11.5067 29.0228 11.6593 28.9407 11.8122 28.7955C11.9651 28.6505 12.0413 28.4391 12.0413 28.1616C12.0413 28.124 12.0377 27.6946 12.0308 26.8745C12.0237 26.0542 12.0203 25.4045 12.0203 24.925L11.5411 25.0007C11.2356 25.0511 10.8502 25.0733 10.3848 25.067C9.91972 25.0606 9.43695 25.0166 8.93703 24.9345C8.43682 24.8524 7.97171 24.6632 7.54111 24.367C7.11073 24.0702 6.8052 23.6823 6.6246 23.203L6.4162 22.7674C6.27734 22.4775 6.05872 22.1556 5.76005 21.8026C5.46138 21.4492 5.15936 21.2094 4.85383 21.0833L4.70797 20.9886C4.61084 20.9256 4.52058 20.8496 4.43717 20.7613C4.35391 20.6728 4.29145 20.5844 4.24979 20.4964C4.20812 20.4079 4.24271 20.3353 4.35391 20.2783C4.46512 20.2217 4.6663 20.1936 4.95811 20.1936L5.37462 20.2502C5.65249 20.3006 5.99604 20.4519 6.40598 20.7044C6.81564 20.9567 7.1524 21.2847 7.41633 21.6883C7.73594 22.2057 8.121 22.5998 8.57262 22.8711C9.02386 23.1427 9.47883 23.2783 9.93708 23.2783C10.3953 23.2783 10.7911 23.2467 11.1246 23.1839C11.4577 23.1207 11.7702 23.0258 12.0621 22.8997C12.187 22.0544 12.5274 21.4043 13.0828 20.9501C12.2912 20.8743 11.5794 20.7609 10.9473 20.6094C10.3155 20.4579 9.66264 20.212 8.98913 19.8712C8.31532 19.5305 7.75637 19.1081 7.31191 18.6031C6.86752 18.0981 6.50281 17.4358 6.2183 16.6159C5.93365 15.7956 5.79128 14.8492 5.79128 13.7768C5.79128 12.2503 6.34009 10.9505 7.43727 9.87813C6.92327 8.73001 6.97179 7.44321 7.58299 6.01735C7.98579 5.90373 8.58312 5.98898 9.3747 6.27289C10.1664 6.557 10.7461 6.79995 11.1143 7.00153C11.4825 7.20318 11.7775 7.37368 11.9998 7.51262C13.2917 7.18456 14.625 7.02056 15.9999 7.02056C17.3747 7.02056 18.7082 7.18456 20.0002 7.51262L20.7918 7.05841C21.3337 6.75547 21.9725 6.47792 22.7087 6.22569C23.4448 5.9734 24.0072 5.90393 24.3963 6.01755C25.0211 7.44341 25.0769 8.73021 24.5626 9.87826C25.6598 10.9507 26.2087 12.2505 26.2087 13.777C26.2087 14.8496 26.0664 15.7992 25.7817 16.6254C25.4973 17.4518 25.1294 18.1144 24.6777 18.6128C24.2264 19.1112 23.6638 19.5304 22.9903 19.8713C22.3166 20.2119 21.6638 20.4582 21.0318 20.6093C20.3998 20.7608 19.6881 20.8747 18.8964 20.9504C19.6182 21.518 19.9792 22.4136 19.9792 23.6376V28.1611C19.9792 28.3756 20.0137 28.549 20.0832 28.6815C20.1531 28.8139 20.264 28.9051 20.4167 28.956C20.5701 29.0064 20.7049 29.0378 20.8232 29.0504C20.9416 29.063 21.1114 29.0694 21.3336 29.0694H26.0003C27.6529 29.0694 29.0664 28.5363 30.2395 27.4701C31.4132 26.4039 32 25.1199 32 23.6186V5.45058C31.9999 3.94921 31.413 2.66507 30.2396 1.59908Z"
+                                fill="white" />
+                            <path class="fill-social"
+                                d="M6.33326 21.1589C6.23614 21.2217 6.25 21.3227 6.375 21.4615C6.51408 21.5876 6.62507 21.6066 6.70847 21.5182C6.8056 21.4553 6.79173 21.3544 6.66652 21.2153C6.52773 21.1019 6.41667 21.0829 6.33326 21.1589Z"
+                                fill="white" />
+                            <path class="fill-social"
+                                d="M5.64598 20.6859C5.60438 20.7744 5.65298 20.8501 5.79185 20.913C5.90283 20.9763 5.99339 20.9638 6.06264 20.8753C6.10423 20.7868 6.05563 20.7111 5.91677 20.6478C5.77791 20.6098 5.68764 20.6226 5.64598 20.6859Z"
+                                fill="white" />
+                            <path class="fill-social"
+                                d="M6.97911 21.8971C6.85397 21.96 6.85397 22.0738 6.97911 22.2376C7.10411 22.4019 7.22196 22.4459 7.33324 22.3701C7.45831 22.2817 7.45831 22.1618 7.33324 22.0103C7.22225 21.8467 7.10411 21.8084 6.97911 21.8971Z"
+                                fill="white" />
+                            <path class="fill-social"
+                                d="M7.70865 22.7484C7.58358 22.8495 7.61116 22.9689 7.79198 23.1082C7.95843 23.2593 8.09737 23.2783 8.2085 23.1645C8.31971 23.0638 8.29191 22.944 8.12517 22.8052C7.95872 22.6541 7.81979 22.635 7.70865 22.7484Z"
+                                fill="white" />
+                        </svg>
+
+                    </a>
+
                 </div>
-                <div class="container-email">eduardoddg60@gmail.com</div>
-                <img src="media/icons/cornerDown.svg" alt="decoration" class="cornerDown-contact">
+                <div class="container-email" id="emailID">eduardoddg60@gmail.com</div>
+                <img src="media/icons/cornerDown-profile.svg" alt="decoration" class="cornerDown-contact">
             </div>
             <div class="content-phrase-end">
                 Created by Edgar de Dios for entertainment and a little leisure
@@ -498,9 +595,6 @@
             </div>
         </footer>
     </section>
-
-
-    <!-- <p style="position: absolute;top:10000px;left: 0;width: 5px" ;>s</p> -->
 
     <script src="scripts/main.js"></script>
     <script src="scripts/backgroundsection.js"></script>

@@ -5,21 +5,33 @@
 @import "components/projects";
 @import "components/aboutMe";
 @import "components/footer";
+@import "components/onload";
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+img{
   user-select: none;
-  
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
-html{
-    // background-color: rgb(31, 29, 29);
+div:not(#emailID), p{
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
-.container-all{
-    position: absolute;
-    top: 100%;
-    width: 100%;
+html {
+  // background-color: rgb(31, 29, 29);
+  scroll-behavior: smooth;
+}
+
+.container-all {
+  position: absolute;
+  top: 100%;
+  width: 100%;
 }
