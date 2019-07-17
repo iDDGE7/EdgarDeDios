@@ -27,6 +27,15 @@ var onload = window.onload = function () {
 
     hiddenTitleBackgroundMobile();
     barsSize();
+
+
+    // load animation //
+
+    var contenedor = document.getElementById('onload-chargin');
+  
+    contenedor.style.visibility = 'hidden';
+    contenedor.style.opacity = '0';
+    contenedor.style.display = 'none';
 }
 
 // var posScroll;
@@ -42,7 +51,18 @@ var scrollWindow = window.onscroll = function () {
     hiddenTitleBackgroundMobile();
 
     barsSize();
-    scroollingFooter();
+    // scroollingFooter();
+
+    var hexa = document.getElementsByClassName('hexa');
+    if (posScroll < window.innerHeight) {
+        for (var i = 0; i < hexa.length; i++) {
+            hexa[i].style.animationName = "animateHex";
+        }
+    } else {
+        for (var i = 0; i < hexa.length; i++) {
+            hexa[i].style.animationName = "initial";
+        }
+    }
 }
 
 
@@ -64,18 +84,18 @@ function headerScroll() {
 
 
 
-var footer = document.getElementById('footer');
-var abooutMeID = document.getElementById('abooutMeID');
+// var footer = document.getElementById('footer');
+// var abooutMeID = document.getElementById('abooutMeID');
 
-function scroollingFooter() {
-    if (posScroll > abooutMeID.offsetTop + abooutMeID.offsetHeight) {
-        // footer.style.transform = "translateY(0%)";
-        footer.style.opacity = "1";
-    } else {
-        // footer.style.transform = "translateY(100%)";
-        footer.style.opacity = "0";
-    }
-}
+// function scroollingFooter() {
+//     if (posScroll > abooutMeID.offsetTop + abooutMeID.offsetHeight) {
+//         // footer.style.transform = "translateY(0%)";
+//         footer.style.opacity = "1";
+//     } else {
+//         // footer.style.transform = "translateY(100%)";
+//         footer.style.opacity = "0";
+//     }
+// }
 
 
 var polygonEdit = document.getElementById("polygonEdit");
@@ -87,3 +107,29 @@ photoPerfil.addEventListener("mouseenter", function () {
 photoPerfil.addEventListener("mouseout", function () {
     polygonEdit.style.transform = "scale(1.0)";
 });
+
+
+
+
+// var anchorHome = document.getElementById("anchorHome");
+// var anchorBackground = document.getElementById("anchorBackground");
+// var anchorProjects = document.getElementById("anchorProjects");
+// var anchorAboutMe = document.getElementById("anchorAboutMe");
+// var background = document.getElementById("backgroundID");
+// var projects = document.getElementById("ProjectsID");
+
+// anchorHome.addEventListener("click", function () {
+//     window.scroll(0, 0);
+
+// });
+// anchorBackground.addEventListener("click", function () {
+//     window.scroll(0, window.innerHeight);
+// });
+// anchorProjects.addEventListener("click", function () {
+//     window.scroll(0, window.innerHeight + background.offsetHeight);
+
+// });
+// anchorAboutMe.addEventListener("click", function () {
+//     window.scroll(0, window.innerHeight + background.offsetHeight + projects.offsetHeight);
+
+// });

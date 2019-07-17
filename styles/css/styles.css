@@ -1,3 +1,8 @@
+/*
+* iDDGE7
+* Edgar de Dios, Copyright 2019
+* https://github.com/DDGE7
+*/
 #header-background {
   position: fixed;
   top: -100%;
@@ -72,13 +77,18 @@
     align-items: center;
     justify-content: space-between; }
     .header .center-content-header .conteiner-logo-main {
+      text-decoration: none;
       font-family: "Poppins", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 35px;
       color: #ffffff;
       user-select: none;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      transition: all 0.2s; }
+      .header .center-content-header .conteiner-logo-main:hover {
+        transition: all 0.2s;
+        transform: scale(1.1); }
     .header .center-content-header .nav-container {
       width: 238px;
       height: 100%;
@@ -163,7 +173,7 @@
   left: 50px;
   transition: all 0.2s;
   transform: scale(1);
-  animation: animateHex 1s infinite alternate linear; }
+  animation: 0.6s infinite alternate; }
 
 .hexa1 {
   top: 0px;
@@ -279,7 +289,7 @@
   from {
     transform: scale(1); }
   to {
-    transform: scale(1.2); } }
+    transform: scale(1.3); } }
 
 .main-phrase {
   position: relative;
@@ -291,7 +301,14 @@
   line-height: 20px;
   text-align: center;
   text-transform: capitalize;
-  color: #ffffff; }
+  color: #ffffff;
+  transition: all 0.4s;
+  transform: scale(1); }
+
+.main-phrase:hover {
+  transition: all 0.5s;
+  color: #e0e0de;
+  transform: scale(1.1); }
 
 .main-think {
   position: absolute;
@@ -309,7 +326,12 @@
   text-transform: capitalize;
   background: -webkit-linear-gradient(#1fc5dc, #cccccc);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+  transform: scale(1);
+  transition: all 0.2s; }
+  .main-think:hover {
+    transform: scale(1.1);
+    transition: all 0.2s; }
 
 .container-all .container-background-all {
   position: relative;
@@ -692,14 +714,17 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: all 0.5s; }
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        transform: scale(1.1); }
       .container-projects-all .container-grid-projects .content-project .itemProject:hover {
         transition: all 0.5s;
+        -webkit-transition: all 0.5s;
         transform: scale(1.2); }
       .container-projects-all .container-grid-projects .content-project .information-project {
         position: absolute;
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.26);
+        background-color: rgba(29, 29, 29, 0.884);
         bottom: 0;
         left: 0;
         transition: all 0.5s;
@@ -721,6 +746,7 @@
           max-width: 400px;
           color: #ffffff;
           transition: all 0.3s;
+          -webkit-transition: all 0.3s;
           height: 0;
           overflow: hidden; }
         .container-projects-all .container-grid-projects .content-project .information-project:hover {
@@ -728,6 +754,7 @@
           .container-projects-all .container-grid-projects .content-project .information-project:hover .description-project-info {
             height: 100px;
             overflow: hidden;
+            -webkit-transition: all 0.2s;
             transition: all 0.3s; }
     .container-projects-all .container-grid-projects .content-project-1 {
       grid-row: span 2;
@@ -800,7 +827,9 @@
           position: relative;
           transition: all 0.5s; }
         .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-img-perfil .photo-perfil {
-          position: absolute; }
+          position: absolute;
+          border-radius: 100%;
+          width: 75%; }
       .container-aboutMe-all .content-element-aboutMe .content-perfil-resume .content-resume-perfil {
         width: 274px;
         height: 221px;
@@ -848,14 +877,15 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: all 0.5s; }
+        transition: all 0.2s; }
       .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme1 {
         grid-column: span 10;
         grid-row: span 1; }
         .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme1 .img-item-photos:hover {
           transform-origin: right;
           height: 150%;
-          transform: translateY(-40%);
+          transform: translateY(-35%);
+          -webkit-transition: all 0.3s;
           transition: all 0.3s; }
       .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme2 {
         grid-column: span 13;
@@ -863,7 +893,8 @@
         .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme2 .img-item-photos:hover {
           transform-origin: right;
           height: 150%;
-          transform: translateY(-40%);
+          transform: translateY(-35%);
+          -webkit-transition: all 0.3s;
           transition: all 0.3s; }
       .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme3 {
         grid-column: 3 / span 8;
@@ -871,7 +902,8 @@
         .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme3 .img-item-photos:hover {
           transform-origin: right;
           height: 150%;
-          transform: translateY(15%);
+          transform: translateY(3%);
+          -webkit-transition: all 0.3s;
           transition: all 0.3s; }
       .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme4 {
         grid-column: 11 / span 9;
@@ -879,7 +911,8 @@
         .container-aboutMe-all .content-element-aboutMe .content-grid-photos .item-grid-aboutme4 .img-item-photos:hover {
           transform-origin: right;
           height: 150%;
-          transform: translateY(15%);
+          transform: translateY(3%);
+          -webkit-transition: all 0.3s;
           transition: all 0.3s; }
     @media (max-width: 1288px) {
       .container-aboutMe-all .content-element-aboutMe {
@@ -1001,7 +1034,12 @@
         justify-content: center;
         align-items: center; }
         .container-aboutMe-all .content-element-do .content-items-do .item-do .icon-do {
-          margin-bottom: 18px; }
+          margin-bottom: 18px;
+          transition: all 0.3s;
+          transform: scale(1.1); }
+          .container-aboutMe-all .content-element-do .content-items-do .item-do .icon-do:hover {
+            transition: all 0.3s;
+            transform: scale(1.3); }
         .container-aboutMe-all .content-element-do .content-items-do .item-do .name-do {
           font-family: Roboto;
           font-style: normal;
@@ -1009,7 +1047,7 @@
           font-size: 11px;
           line-height: 13px;
           text-align: center;
-          color: #000000; }
+          color: #616161; }
     @media (max-width: 510px) {
       .container-aboutMe-all .content-element-do .content-title-do {
         margin-left: 8px;
@@ -1022,16 +1060,15 @@
           margin-bottom: 40px; } }
 
 .container-footer-all {
-  opacity: 0;
   z-index: 10;
   width: 100%;
   padding: 50px 0 50px 0;
-  background-color: #252525;
+  background: url(../../../media/images/footer4.jpg) fixed center no-repeat;
   background-size: cover;
+  filter: saturate(150%);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  transition: all 1s; }
+  align-items: center; }
   .container-footer-all .content-contact {
     position: relative;
     width: 80%;
@@ -1072,6 +1109,12 @@
       letter-spacing: -0.02em;
       color: #ffffff;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    .container-footer-all .content-contact #emailID {
+      user-select: initial;
+      -moz-user-select: initial;
+      -webkit-user-select: initial; }
+      .container-footer-all .content-contact #emailID::selection {
+        background-color: #fa7233; }
     .container-footer-all .content-contact .cornerDown-contact {
       position: absolute;
       right: 0;
@@ -1099,11 +1142,71 @@
     color: #ffffff;
     margin-top: 55px; }
 
+.link-social .fill-social {
+  fill: white;
+  transition: all 0.2s; }
+
+.link-social:hover .fill-social {
+  transition: all 0.2s;
+  fill: #fa7233; }
+
+.onload-chargin {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 38, 38, 0.644);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container-load {
+  position: relative;
+  width: 200px;
+  height: 200px; }
+
+.elipse-load {
+  position: absolute;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  animation: rotateElipse 1s infinite linear; }
+
+.polygon-load {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  animation: rotatePolygon 0.1s infinite linear; }
+
+@keyframes rotateElipse {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(360deg); } }
+
+@keyframes rotatePolygon {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(-360deg); } }
+
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  user-select: none; }
+  box-sizing: border-box; }
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none; }
+
+div:not(#emailID), p {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none; }
+
+html {
+  scroll-behavior: smooth; }
 
 .container-all {
   position: absolute;
