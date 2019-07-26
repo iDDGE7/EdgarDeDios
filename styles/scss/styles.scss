@@ -13,21 +13,32 @@
   box-sizing: border-box;
 }
 
-img{
+img {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
 }
 
-div:not(#emailID), p{
+div:not(#emailID),
+p {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
 }
 
 html {
-  // background-color: rgb(31, 29, 29);
   scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    width: 15px;
+    height: 8px;
+    background-color: rgb(31, 30, 30);
+    transition: all 0.5s !important;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(219, 119, 37);
+    border-radius: 0 10px 0 10px;
+  }
+
 }
 
 .container-all {
