@@ -1,0 +1,58 @@
+@import "components/header";
+@import "components/hero";
+@import "components/hero";
+@import "components/sections";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(192, 105, 105);
+}
+
+.container-full {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  padding: 0 0 50px 0;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: column;
+
+
+  .container-section:first-child {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #9f5428 0%, #b24b4c 88.54%);
+  }
+  .container-section:nth-child(2) {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #b24b4c 0%, #242425 67.98%);
+  }
+  .container-section:nth-child(3) {
+    width: 100%;
+    // padding: 60vh 0 50vh 0;
+    // height: 140vh;
+    background: linear-gradient(180deg, #232324 25.52%, #45207a 78.12%);
+
+  }
+  .container-section:nth-child(4) {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #45207a 51.78%, #2b6a53 100%);
+  }
+  .container-section:nth-child(5) {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(178.92deg, #2b6a53 24.82%, #b6d034 97.71%);
+  }
+  .container-section:nth-child(6) {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(178.92deg, #b6d034 17.11%, #d7d8d2 97.64%);
+  }
+}

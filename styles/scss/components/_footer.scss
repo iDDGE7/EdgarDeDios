@@ -2,7 +2,7 @@
   z-index: 10;
   width: 100%;
   padding: 50px 0 50px 0;
-  background: url(../../media/images/footer.jpg) fixed center no-repeat;
+  background: linear-gradient(180deg, #242424 0%, rgba(32, 32, 32, 0.25) 100%), url(../../media/images/footer.jpg) fixed center no-repeat;
   background-size: cover;
   filter: saturate(150%);
 
@@ -28,7 +28,7 @@
     }
 
     .title-contact {
-      font-family: Roboto;
+      font-family: Proxima Nova;
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
@@ -49,7 +49,7 @@
     }
 
     .container-email {
-      font-family: Roboto;
+      font-family: Proxima Nova;
       font-style: normal;
       font-weight: 500;
       font-size: 12px;
@@ -72,6 +72,7 @@
         background-color: rgb(250, 114, 51);
       }
     }
+
     .cornerDown-contact {
       position: absolute;
       right: 0;
@@ -83,7 +84,7 @@
     width: 80%;
     max-width: 489px;
 
-    font-family: Roboto;
+    font-family: Proxima Nova;
     font-style: italic;
     font-weight: normal;
     font-size: 15px;
@@ -99,7 +100,7 @@
     width: 90%;
     max-width: 167px;
 
-    font-family: Roboto;
+    font-family: Proxima Nova;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -116,6 +117,7 @@
     fill: rgb(255, 255, 255);
     transition: all 0.2s;
   }
+
   &:hover {
     .fill-social {
       transition: all 0.2s;
