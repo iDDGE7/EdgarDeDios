@@ -1,11 +1,15 @@
 @import "components/header";
 @import "components/cover";
 @import "components/background";
-@import "components/mixin";
 @import "components/projects";
 @import "components/aboutMe";
 @import "components/footer";
 @import "components/onload";
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url(../../fonts/ProximaNova/ProximaNova-Regular.otf);
+}
 
 * {
   padding: 0;
@@ -28,15 +32,18 @@ p {
 
 html {
   scroll-behavior: smooth;
+
   &::-webkit-scrollbar {
     width: 15px;
     height: 8px;
-    background-color: rgb(31, 30, 30);
+    background-color: rgb(54, 54, 54);
+    padding: 15px;
     transition: all 0.5s !important;
   }
+
   &::-webkit-scrollbar-thumb {
-    background-color: rgb(219, 119, 37);
-    border-radius: 0 10px 0 10px;
+    background-color: rgba(21, 216, 174, 0.644);
+    // border-radius: 0 10px 0 10px;
   }
 
 }
