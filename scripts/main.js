@@ -194,7 +194,6 @@ function hiddenTitleBackgroundMobile() {
             contenttitle.style.bottom = "0";
             contenttitle.style.top = "initial";
         }
-
         contenttitle.style.position = "absolute";
         contenttitle.style.width = "100%";
         courtineBackground.style.width = "100%";
